@@ -7,7 +7,7 @@
 ## 프로젝트 구조
 
 ```pqsql
-load-balancing-pro/
+Docker-Load-Balancing/
 ├── docker-compose.yml
 ├── nginx.conf
 ├── webserver1/
