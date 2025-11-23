@@ -1,10 +1,10 @@
 # Load Balancing Example (Nginx + Docker Compose)
 
-> 간단한 라운드로빈 방식의 로드밸런싱 예제 프로젝트입니다.
+> 간단한 라운드로빈 방식의 로드밸런싱 연습 레포지토리입니다.
 
 ---
 
-## 프로젝트 구조
+## 폴더 구조
 
 ```pqsql
 Docker-Load-Balancing/
