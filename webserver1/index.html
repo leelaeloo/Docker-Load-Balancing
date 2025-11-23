@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Server 1</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background: #1a1a1a;
+        color: #e0e0e0;
+      }
+      .container {
+        text-align: center;
+        background: #2d2d2d;
+        padding: 60px 80px;
+        border-radius: 12px;
+        border: 2px solid #404040;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+      }
+      h1 {
+        font-size: 42px;
+        margin-bottom: 20px;
+        color: #ffffff;
+        border-bottom: 3px solid #4a90e2;
+        padding-bottom: 15px;
+      }
+      .port {
+        font-size: 20px;
+        color: #4a90e2;
+        margin-bottom: 30px;
+      }
+      .server-info {
+        margin-top: 30px;
+        font-size: 16px;
+        color: #b0b0b0;
+      }
+      .status {
+        display: inline-block;
+        padding: 8px 16px;
+        background: #2d5016;
+        color: #7ed321;
+        border-radius: 20px;
+        margin-top: 20px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>1st Web Server</h1>
+      <p class="port">Port: 8001</p>
+      <div class="server-info">
+        <p>Load Balancing Test</p>
+        <p id="time"></p>
+        <span class="status">● ACTIVE</span>
+      </div>
+    </div>
+    <script>
+      function updateTime() {
+        document.getElementById("time").textContent =
+          "Current Time: " + new Date().toLocaleString("en-US");
+      }
+      updateTime();
+      setInterval(updateTime, 1000);
+    </script>
+  </body>
+</html>
